@@ -1,0 +1,332 @@
+html {
+    scroll-behavior: smooth;
+}
+@media {
+    .container {
+        width: 100%;
+    }
+    
+}
+body {
+    font-weight: 300;
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: white;
+    z-index:100;
+
+    position: fixed;
+    top:0;
+    padding: 5px 20px;
+    transition-property: background-color;
+    transition-duration: 550ms;
+}
+
+header:hover{
+    background-color: rgb(102, 158, 231);
+}
+
+header h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+header nav {
+    display:flex;
+    justify-content: flex-end;
+}
+
+header p{
+    padding: 10px 20px;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+
+
+/*index*/
+
+.entrance {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.entrance-pic img{
+    
+    width:100%;
+    
+}
+
+.entrance h1 {
+    font-size: 72px;
+    color: white;
+    background-color: none;
+    padding: 10px  10px;
+    border: 2px solid;
+    position: absolute;
+    top:70%;
+    left:45%;
+}
+
+.entrance a{
+    text-decoration: none;
+    color: white;
+}
+
+.first_page {
+    display: flex;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1558271736-cd043ef2e855?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80');
+    background-size: cover;
+    height: 500px;
+    opacity: 0.85;
+    margin-bottom: 50px;
+    
+}
+
+.first_page h2{
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+}
+
+.first_page h3{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 50;
+    color: #000;
+    
+}
+
+.intro{
+    display: inline-flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+}
+.intro h3{
+    font-size: 20px;
+    position: relative;
+    
+    
+    width: 80%;
+    
+}
+
+.intro p{
+    font-size: 20px;
+    position: relative;
+    margin-left: 50px;;
+    margin-right: 50px;
+    width: 65%;
+    color: whitesmoke;
+}
+form {
+    height:80%;
+    max-width: 20%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form a {
+    display:block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form-group{
+    position: relative;
+    height: 30px;
+    
+}
+
+.btn {
+    
+    margin-top: 20px;
+    background-color: rgb(70, 123, 223);
+    color: white;
+}
+
+
+
+/*about me*/
+
+.image_me{
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.about_me h2{
+    
+    font-size: 80px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about_me p {
+    font-size: 32px;
+    margin-left:360px
+}
+
+.about_me h6 {
+    font-size: 12px;
+    margin-left:360px
+}
+
+.gallery {
+    margin-top: 30px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+    
+}
+
+.gallery_item{
+    margin:10px;
+    justify-content: center;
+    
+}
+
+
+.thumbnail{
+    width:360px;
+    height:360px;
+}
+
+.gallery_item p{
+    position: absolute;
+    top:3%;
+    left:3%;
+    height: 360px;
+    width: 360px;
+    font-size: 40px;
+    padding-top: 40%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity:0;
+    transition-property: opacity;
+    transition-duration: 800ms;
+}
+
+.gallery_item p:hover {
+    opacity: 1;
+}
+
+
+/*contact*/
+section .contact{
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 110px;
+    
+}
+
+.contact{
+    background-color: whitesmoke;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.contact .row{
+    display:flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+
+.col-xl-10 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-top: 150px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.my_image img {
+    
+    /*애매하게 화면 크기 줄이면 사진이 겹쳐지는 것 해결*/
+    height: 50%;
+    width: 50%;
+}
+
+.contact h2{
+    display: block;
+    color: rgb(59, 59, 59);
+    font-size: 5.25rem;
+    font-weight: 600;
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.my_description h2{
+    font-size: 8rem;
+    margin-bottom: 10px;
+}
+
+
+.contact p, 
+.contact ul {
+    display:block;
+    font-size:5rem;
+    font-weight: 300;
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ 
+}
+
+.my_description p{
+    font-size: 4rem;
+    margin-bottom: 50px;
+    color: rgb(156, 156, 156)
+}
+
+.my_info ul, li, span{
+    font-size: 2.875rem;
+    display: inline-block;
+    
+}
+
+.my_info ul{
+    padding-left:0;
+}
+.my_info li{
+    font-size: 2.3rem;
+    color: rgb(156, 156, 156)
+}
+
+.my_info span{
+    min-width: 300px;
+    color: rgb(59, 59, 59);
+}
+
+.sns img{
+    height: 24px;
+    width: 24px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+}
