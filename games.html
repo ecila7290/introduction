@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" type="css/text">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="container">
+        <div class="row">
+            <h1 class="col-sm-4">🐾Je K</h1>
+            <nav class="col-sm-7">
+                <a href="index.html#first_page"><p>HOME</p></a>
+                <a href="aboutme.html"><p>ABOUT ME</p></a>
+                <a href="games.html"><p>GAMES</p></a>
+                <a href="contact.html"><p>CONTACT</p></a>
+                
+            </nav>
+        </div>
+    </header>
+
+    <section class="numguess">
+        
+        <h1>Guess The Number</h1> 
+        
+        <p>We have selected a random number between 1 - 10.  
+        See if you can guess it.</p> 
+        
+        <div class="form" id="numGuessForm"> 
+            <label for="guessField">Enter a guess: </label> 
+            <input type = "number" id = "guessField" class = "guessField"> 
+            <input type = "submit" value = "Submit guess" 
+                class = "guessSubmit" id = "submitGuess"> 
+        </div> 
+    </section>
+    <section class="breakout">
+        <h1>Breakout!</h1>
+        <button class="start_btn1" id="p1mode" onclick="game_start()">Player 1 Mode</button>
+        <button class="start_btn2" id="coopmode" onclick="game_start_coop()">Co-op Mode</button>
+        <canvas id="myCanvas" width="640" height="480"></canvas>
+    </section>
+
+    <section class="pingpong">
+        <h1>PingPong!</h1>
+        <button class="start_btn" id="vsmode" onclick="play_pingpong()">VS Mode</button>
+        <canvas id="pongCanvas" width="640" height="480"></canvas>
+    </section>
+
+    <script type="text/javascript" src="numguess.js"></script>
+    <script type="text/javascript" src="breakout.js"></script>
+    <script type="text/javascript" src="pingpong.js"></script>
+
+</body>
+</html>

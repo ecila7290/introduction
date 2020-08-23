@@ -330,3 +330,132 @@ section .contact{
     margin-bottom: 5px;
     margin-right: 20px;
 }
+
+/*games*/
+
+.numguess {
+    position: relative;
+    display: flexbox;
+    top: 100px;
+    margin-left: 20px;
+}
+
+
+.numguess input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.breakout {
+    position: absolute;
+    display: flexbox;
+    margin-left: 800px;
+    margin-top: -30px;
+    
+}
+button .start_btn1 {
+    position: absolute;
+    
+}
+
+button .start_btn2 {
+    position: absolute;
+    
+}
+
+#myCanvas {
+    top: 20px;
+    
+    display: block;
+    position: relative;
+    background-color: white;
+}
+
+.pingpong {
+    position: relative;
+    margin-left: 20px;   
+    top: 150px;
+    
+}
+
+button #vsmode {
+    position: absolute;
+}
+
+#pongCanvas {
+    top: 20px;
+    
+    display: block;
+    position: relative;
+    background-color: white;
+}
+
+section .registration {
+    position: relative;
+    display: block;
+    
+}
+
+.registration form{
+    padding: 40px; 
+    margin-left: 40%;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.btn_area {
+    margin-top: 20%;
+    margin-left: 35%;
+    
+}
+
+.birth_wrap{
+    position: absolute;
+    display: block;
+}
+
+.birth_year{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+
+}
+.birth_month{
+    position: relative;
+    display: inline-block;
+    width: 20%;
+}
+
+.birth_date{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+
+#year{
+    width: 100%;
+}
+#month{
+    width:100%;
+}
+#date{
+    width:100%;
+}
+
+.gender {
+    position: relative;
+    margin-top: 60px;;
+}
+
+.error_not_entered {
+    font-size: 14px;   
+    color: red;
+}
+
+.entered{
+    font-size: 14px;
+    color: green;
+}
